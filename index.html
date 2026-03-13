@@ -145,64 +145,96 @@
       <p class="section-desc">We specialize in building fast, modern, mobile-responsive websites for small businesses. Our AI-powered workflow means you get agency-quality results at a fraction of the cost and time.</p>
     </div>
     <div class="services-grid">
-      <div class="service-card service-card--primary">
-        <div class="service-icon">
-          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
-            <rect x="4" y="8" width="40" height="28" rx="3"/>
-            <path d="M4 16h40M16 36v4M32 36v4M12 40h24"/>
-            <path d="M14 22l4 4-4 4M22 30h8" stroke="var(--color-accent)"/>
-          </svg>
+      <!-- Card 1 — Starter Site -->
+      <div class="service-card">
+        <div class="service-price">
+          <span class="price-amount">$500</span>
+          <span class="price-scope">Up to 5 pages</span>
         </div>
-        <div class="service-badge">Core Service</div>
-        <h3>Custom Website Build</h3>
-        <p>A complete, custom-designed website tailored to your business. Mobile-responsive, fast-loading, and built to convert visitors into customers.</p>
+        <h3>Starter Site</h3>
         <ul class="service-features">
-          <li>Custom design — not a template</li>
-          <li>Mobile-responsive on all devices</li>
-          <li>SEO-optimized from day one</li>
-          <li>Delivered in under 24 hours</li>
-          <li>Free mock-up before you commit</li>
+          <li>Custom design (not a template)</li>
+          <li>Mobile-responsive</li>
+          <li>Contact form</li>
+          <li>SEO basics (meta tags, sitemap)</li>
+          <li>Google Analytics setup</li>
+          <li>Free hosting &amp; SSL</li>
         </ul>
-        <a href="#contact" class="btn btn-primary service-cta" data-service="Custom Website Build">Get a Free Mock-Up <span class="arrow">&rarr;</span></a>
-      </div>
-      <div class="service-card">
-        <div class="service-icon">
-          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
-            <circle cx="24" cy="24" r="18"/>
-            <path d="M24 6a18 18 0 0 1 0 36" stroke="var(--color-accent)" stroke-width="3"/>
-            <path d="M18 24l4 4 8-8"/>
-          </svg>
+        <p class="service-costs-note">Your only ongoing cost: domain name (~$12/year). Hosting, SSL, and forms are free.</p>
+        <div class="service-card-actions">
+          <a href="#contact" class="btn btn-outline service-cta" data-service="Starter Website Build">Get a Free Mock-Up <span class="arrow">&rarr;</span></a>
+          <button type="button" class="service-learn-more" data-modal="starter">Learn More</button>
         </div>
-        <h3>SEO &amp; Performance</h3>
-        <p>Every site we build is optimized for search engines and blazing-fast load times. Get found by the customers searching for your services.</p>
-        <a href="#contact" class="btn btn-outline service-cta" data-service="SEO & Performance">Request a Free Audit <span class="arrow">&rarr;</span></a>
       </div>
-      <div class="service-card">
-        <div class="service-icon">
-          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
-            <rect x="8" y="4" width="32" height="40" rx="3"/>
-            <path d="M16 14h16M16 22h12M16 30h8" stroke="var(--color-accent)"/>
-            <circle cx="34" cy="34" r="8" fill="var(--color-bg)" stroke="currentColor"/>
-            <path d="M34 30v8M30 34h8" stroke="var(--color-accent)"/>
-          </svg>
+
+      <!-- Card 2 — Pro Site (Primary) -->
+      <div class="service-card service-card--primary">
+        <div class="service-badge">Most Popular</div>
+        <div class="service-price">
+          <span class="price-amount">$1,500</span>
+          <span class="price-scope">10+ pages</span>
         </div>
-        <h3>Landing Pages &amp; Funnels</h3>
-        <p>High-converting landing pages designed to capture leads and drive action. Perfect for campaigns, launches, and promotions.</p>
-        <a href="#contact" class="btn btn-outline service-cta" data-service="Landing Pages & Funnels">Get a Free Mock-Up <span class="arrow">&rarr;</span></a>
+        <h3>Pro Site</h3>
+        <ul class="service-features">
+          <li>Everything in Starter, plus:</li>
+          <li>Blog section</li>
+          <li>Online booking integration (Calendly/Cal.com)</li>
+          <li>Advanced SEO (schema markup, local SEO)</li>
+          <li>Multiple contact forms</li>
+          <li>Priority delivery</li>
+        </ul>
+        <p class="service-costs-note">Hosting and core features are free. If you need paid tools (booking software, custom email), you pay the provider directly — most have free tiers.</p>
+        <div class="service-card-actions">
+          <a href="#contact" class="btn btn-primary service-cta" data-service="Pro Website Build">Get a Free Mock-Up <span class="arrow">&rarr;</span></a>
+          <button type="button" class="service-learn-more" data-modal="pro">Learn More</button>
+        </div>
       </div>
+
+      <!-- Card 3 — Premium Build -->
       <div class="service-card">
-        <div class="service-icon">
-          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M8 40V20l16-12 16 12v20H8z"/>
-            <path d="M20 40V28h8v12" stroke="var(--color-accent)"/>
-            <path d="M18 18h12" opacity="0.5"/>
-          </svg>
+        <div class="service-badge">Full Service</div>
+        <div class="service-price">
+          <span class="price-amount price-amount--from">Starting at $2,500</span>
+          <span class="price-scope">Custom scope</span>
         </div>
-        <h3>Industry-Specific Design</h3>
-        <p>We've built sites across HVAC, real estate, coaching, and more. Every design is tailored to your industry's best practices and customer expectations.</p>
-        <a href="#contact" class="btn btn-outline service-cta" data-service="Industry-Specific Design">Get a Free Mock-Up <span class="arrow">&rarr;</span></a>
+        <h3>Premium Build</h3>
+        <ul class="service-features">
+          <li>Everything in Pro, plus:</li>
+          <li>E-commerce / online payments</li>
+          <li>CRM integration</li>
+          <li>Multi-location pages</li>
+          <li>Custom booking systems</li>
+          <li>Advanced animations &amp; interactivity</li>
+        </ul>
+        <p class="service-costs-note">Advanced integrations may have monthly costs (e.g., Stripe fees at 2.9% per transaction, CRM tools). We'll map out all costs before you commit.</p>
+        <div class="service-card-actions">
+          <a href="#contact" class="btn btn-outline service-cta" data-service="Premium Website Build">Discuss Your Project <span class="arrow">&rarr;</span></a>
+          <button type="button" class="service-learn-more" data-modal="premium">Learn More</button>
+        </div>
+      </div>
+
+      <!-- Card 4 — Landing Page -->
+      <div class="service-card">
+        <div class="service-price">
+          <span class="price-amount">$350</span>
+          <span class="price-scope">Single page</span>
+        </div>
+        <h3>Landing Page</h3>
+        <ul class="service-features">
+          <li>High-converting design</li>
+          <li>Lead capture form</li>
+          <li>Mobile-responsive</li>
+          <li>SEO-optimized</li>
+          <li>Fast delivery (same day)</li>
+        </ul>
+        <p class="service-costs-note">No ongoing costs. Free hosting and SSL included.</p>
+        <div class="service-card-actions">
+          <a href="#contact" class="btn btn-outline service-cta" data-service="Landing Page">Get a Free Mock-Up <span class="arrow">&rarr;</span></a>
+          <button type="button" class="service-learn-more" data-modal="landing">Learn More</button>
+        </div>
       </div>
     </div>
+    <p class="services-maintenance-note">Add ongoing maintenance for $100/month — content updates, design tweaks, performance monitoring, and priority support.</p>
   </div>
 </section>
 
@@ -433,10 +465,11 @@
             <label for="contact-service">Service Interested In <span class="required">*</span></label>
             <select id="contact-service" name="service" required>
               <option value="" disabled selected>Select a service</option>
-              <option value="Custom Website Build">Custom Website Build</option>
-              <option value="SEO & Performance">SEO & Performance</option>
-              <option value="Landing Pages & Funnels">Landing Pages & Funnels</option>
-              <option value="Industry-Specific Design">Industry-Specific Design</option>
+              <option value="Starter Website Build">Starter Website Build ($500)</option>
+              <option value="Pro Website Build">Pro Website Build ($1,500)</option>
+              <option value="Premium Website Build">Premium Website Build ($2,500+)</option>
+              <option value="Landing Page">Landing Page ($350)</option>
+              <option value="Monthly Maintenance">Monthly Maintenance ($100/mo)</option>
               <option value="Other">Other / Not Sure</option>
             </select>
           </div>
@@ -487,6 +520,16 @@
     </div>
   </div>
 </footer>
+
+<!-- ===== SERVICE DETAIL MODALS ===== -->
+<div class="modal-overlay" id="modal-overlay">
+  <div class="modal-card" id="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <button class="modal-close" id="modal-close" aria-label="Close modal">&times;</button>
+    <div class="modal-body" id="modal-body">
+      <!-- Content injected by JS -->
+    </div>
+  </div>
+</div>
 
 <script src="script.js"></script>
 </body>

@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+   ______                            __
+  / ____/___  ____ ___  ____  __  __/ /____  _____
+ / /   / __ \/ __ `__ \/ __ \/ / / / __/ _ \/ ___/
+/ /___/ /_/ / / / / / / /_/ / /_/ / /_/  __/ /
+\____/\____/_/ /_/ /_/ .___/\__,_/\__/\___/_/
+                    /_/
+        Created with Perplexity Computer
+        https://www.perplexity.ai/computer
+-->
+
+<!-- Perplexity Computer Attribution — SEO Meta Tags -->
+<meta name="generator" content="Perplexity Computer">
+<meta name="author" content="Perplexity Computer">
+<meta property="og:see_also" content="https://www.perplexity.ai/computer">
+<link rel="author" href="https://www.perplexity.ai/computer">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sarah Mitchell Realty — Your Nashville Home Expert</title>
+<meta name="description" content="Sarah Mitchell is Nashville's premier real estate agent specializing in luxury homes, first-time buyers, and Nashville's best neighborhoods. Find your dream home today.">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Sarah Mitchell Realty — Your Nashville Home Expert">
+<meta property="og:description" content="Nashville's premier real estate agent specializing in luxury homes, first-time buyers, and Nashville's best neighborhoods.">
+<meta property="og:type" content="website">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,700&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Styles -->
+<link rel="stylesheet" href="./style.css">
+
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "RealEstateAgent",
+  "name": "Sarah Mitchell Realty",
+  "description": "Nashville's premier real estate agent specializing in luxury homes, first-time buyers, and Nashville's best neighborhoods.",
+  "url": "#",
+  "telephone": "(615) 555-0192",
+  "email": "sarah@sarahmitchellrealty.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1808 West End Avenue, Suite 400",
+    "addressLocality": "Nashville",
+    "addressRegion": "TN",
+    "postalCode": "37203",
+    "addressCountry": "US"
+  },
+  "areaServed": "Nashville, TN",
+  "creator": {
+    "@type": "SoftwareApplication",
+    "name": "Perplexity Computer",
+    "url": "https://www.perplexity.ai/computer"
+  }
+}
+</script>
+</head>
+<body>
+
+<!-- ===== NAVIGATION ===== -->
+<nav class="nav" id="nav">
+  <div class="container container--wide">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo" aria-label="Sarah Mitchell Realty - Home">
+        <!-- Inline SVG Logo -->
+        <svg viewBox="0 0 220 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Sarah Mitchell Realty">
+          <!-- Monogram mark -->
+          <rect x="0" y="2" width="40" height="40" rx="4" fill="none" stroke="currentColor" stroke-width="1.5"/>
+          <text x="20" y="30" text-anchor="middle" font-family="'Playfair Display', Georgia, serif" font-weight="700" font-size="22" fill="currentColor">SM</text>
+          <!-- Wordmark -->
+          <text x="52" y="22" font-family="'Playfair Display', Georgia, serif" font-weight="700" font-size="16" fill="currentColor">Sarah Mitchell</text>
+          <text x="52" y="38" font-family="'Work Sans', sans-serif" font-weight="500" font-size="8" letter-spacing="3" text-transform="uppercase" fill="#C4A265">R E A L T Y</text>
+        </svg>
+      </a>
+      <ul class="nav__links">
+        <li><a href="#listings">Listings</a></li>
+        <li><a href="#neighborhoods">Neighborhoods</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#contact" class="nav__cta">Contact</a></li>
+      </ul>
+      <button class="nav__mobile-toggle" aria-label="Open menu" onclick="toggleMobileNav()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Navigation Overlay -->
+<div class="nav__mobile-overlay" id="mobileNav">
+  <button class="nav__mobile-close" onclick="toggleMobileNav()" aria-label="Close menu">&times;</button>
+  <a href="#listings" onclick="toggleMobileNav()">Listings</a>
+  <a href="#neighborhoods" onclick="toggleMobileNav()">Neighborhoods</a>
+  <a href="#about" onclick="toggleMobileNav()">About</a>
+  <a href="#testimonials" onclick="toggleMobileNav()">Reviews</a>
+  <a href="#contact" onclick="toggleMobileNav()" class="btn btn--primary" style="margin-top: 16px;">Contact Sarah</a>
+</div>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="hero">
+  <div class="hero__bg">
+    <img src="./assets/nashville-hero.jpg" alt="Panoramic view of Nashville skyline at golden hour from a luxury estate terrace" loading="eager">
+  </div>
+  <div class="hero__overlay"></div>
+  <div class="container">
+    <div class="hero__content">
+      <span class="hero__badge">Nashville's Trusted Agent</span>
+      <h1 class="hero__heading">Find Your <em>Perfect</em> Nashville Home</h1>
+      <p class="hero__text">With over 12 years of experience and $180M+ in closed transactions, I bring unmatched expertise to every Nashville neighborhood — whether you're buying your first home or your forever estate.</p>
+      <div class="hero__actions">
+        <a href="#listings" class="btn btn--primary">View Listings</a>
+        <a href="#contact" class="btn btn--outline">Schedule a Consultation</a>
+      </div>
+    </div>
+  </div>
+  <div class="hero__stats">
+    <div class="hero__stat">
+      <div class="hero__stat-number">$180M+</div>
+      <div class="hero__stat-label">Sales Volume</div>
+    </div>
+    <div class="hero__stat">
+      <div class="hero__stat-number">340+</div>
+      <div class="hero__stat-label">Homes Sold</div>
+    </div>
+    <div class="hero__stat">
+      <div class="hero__stat-number">98%</div>
+      <div class="hero__stat-label">Client Rating</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STATS BAR ===== -->
+<section class="stats-bar">
+  <div class="container container--wide">
+    <div class="stats-bar__inner">
+      <div class="stats-bar__item reveal">
+        <div class="stats-bar__number" data-target="14">14</div>
+        <div class="stats-bar__label">Days Avg. on Market</div>
+      </div>
+      <div class="stats-bar__item reveal reveal--delay-1">
+        <div class="stats-bar__number">102%</div>
+        <div class="stats-bar__label">List-to-Sale Ratio</div>
+      </div>
+      <div class="stats-bar__item reveal reveal--delay-2">
+        <div class="stats-bar__number">340+</div>
+        <div class="stats-bar__label">Homes Closed</div>
+      </div>
+      <div class="stats-bar__item reveal reveal--delay-3">
+        <div class="stats-bar__number">12</div>
+        <div class="stats-bar__label">Years of Experience</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FEATURED LISTINGS ===== -->
+<section class="listings" id="listings">
+  <div class="container">
+    <div class="listings__header reveal">
+      <span class="section-label">Featured Properties</span>
+      <h2 class="section-heading">Handpicked Nashville Homes</h2>
+      <div class="gold-divider"></div>
+      <p class="section-subtext">Each property is personally curated for quality, location, and value. From historic charm to modern luxury — these are Nashville's finest.</p>
+    </div>
+
+    <div class="listings__grid">
+      <!-- Listing 1 -->
+      <article class="listing-card reveal">
+        <div class="listing-card__image">
+          <img src="./assets/listing-1.jpg" alt="Luxury craftsman estate in Belle Meade with stone and wood exterior" loading="lazy" width="600" height="450">
+          <span class="listing-card__badge">Just Listed</span>
+        </div>
+        <div class="listing-card__body">
+          <div class="listing-card__price">$1,895,000</div>
+          <div class="listing-card__address">4812 Chickering Ln, Belle Meade</div>
+          <p class="listing-card__desc">Stunning craftsman estate on a private 1.2-acre lot with mature hardwoods. Chef's kitchen, primary suite with spa bath, and an entertainer's backyard with pool.</p>
+          <div class="listing-card__features">
+            <span class="listing-card__feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-4 0h4"/></svg>
+              5 Bed
+            </span>
+            <span class="listing-card__feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M4 16h16M4 16l1-8h14l1 8M8 4h8"/></svg>
+              4.5 Bath
+            </span>
+            <span class="listing-card__feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 12h18"/></svg>
+              4,280 sqft
+            </span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Listing 2 -->
+      <article class="listing-card reveal reveal--delay-1">
+        <div class="listing-card__image">
+          <img src="./assets/listing-2.jpg" alt="Modern luxury high-rise condominium in Nashville's Gulch district at twilight" loading="lazy" width="600" height="450">
+          <span class="listing-card__badge">Price Reduced</span>
+        </div>
+        <div class="listing-card__body">
+          <div class="listing-card__price">$875,000</div>
+          <div class="listing-card__address">600 12th Ave S, Unit PH4, The Gulch</div>
+          <p class="listing-card__desc">Stunning penthouse unit with panoramic skyline views. Floor-to-ceiling windows, gourmet kitchen, private balcony. Walk to Nashville's best restaurants and nightlife.</p>
+          <div class="listing-card__features">
+            <span class="listing-card__feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-4 0h4"/></svg>
+              3 Bed
+            </span>
+            <span class="listing-card__feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M4 16h16M4 16l1-8h14l1 8M8 4h8"/></svg>
+              2.5 Bath
+            </span>
+            <span class="listing-card__feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 12h18"/></svg>
+              2,140 sqft
+            </span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Listing 3 -->
+      <article class="listing-card reveal reveal--delay-2">
+        <div class="listing-card__image">
+          <img src="./assets/listing-3.jpg" alt="Charming renovated craftsman bungalow in East Nashville" loading="lazy" width="600" height="450">
+          <span class="listing-card__badge">Open House Sun</span>
+        </div>
+        <div class="listing-card__body">
+          <div class="listing-card__price">$549,000</div>
+          <div class="listing-card__address">1207 Fatherland St, East Nashville</div>
+          <p class="listing-card__desc">Beautifully renovated 1920s bungalow with modern updates throughout. Open floor plan, original hardwoods refinished, new chef's kitchen. Steps from Five Points dining.</p>
+          <div class="listing-card__features">
+            <span class="listing-card__feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-4 0h4"/></svg>
+              3 Bed
+            </span>
+            <span class="listing-card__feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M4 16h16M4 16l1-8h14l1 8M8 4h8"/></svg>
+              2 Bath
+            </span>
+            <span class="listing-card__feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 12h18"/></svg>
+              1,640 sqft
+            </span>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div class="listings__cta reveal">
+      <a href="#contact" class="btn btn--dark">See All Listings &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== NEIGHBORHOODS ===== -->
+<section class="neighborhoods" id="neighborhoods">
+  <div class="container">
+    <div class="neighborhoods__header reveal">
+      <span class="section-label">Explore Nashville</span>
+      <h2 class="section-heading">Neighborhood Guide</h2>
+      <div class="gold-divider"></div>
+      <p class="section-subtext">Nashville's neighborhoods each have their own character and charm. Here are the areas where I specialize — and where my clients love to call home.</p>
+    </div>
+
+    <div class="neighborhoods__grid">
+      <!-- Belle Meade -->
+      <div class="neighborhood-card reveal">
+        <div class="neighborhood-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 9l10 7 10-7-10-7z"/><path d="M2 17l10 7 10-7"/><path d="M2 13l10 7 10-7"/></svg>
+        </div>
+        <div>
+          <h3 class="neighborhood-card__name">Belle Meade</h3>
+          <div class="neighborhood-card__stats">
+            <span class="neighborhood-card__stat">Avg. $1.8M</span>
+            <span class="neighborhood-card__stat">Top Schools</span>
+          </div>
+          <p class="neighborhood-card__desc">Nashville's most prestigious address. Estate homes on sprawling lots, tree-lined streets, and proximity to Percy Warner Park. Home to Belle Meade Country Club and top-rated private schools.</p>
+        </div>
+      </div>
+
+      <!-- The Gulch -->
+      <div class="neighborhood-card reveal reveal--delay-1">
+        <div class="neighborhood-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="8" width="6" height="14" rx="1"/><rect x="9" y="3" width="6" height="19" rx="1"/><rect x="15" y="6" width="6" height="16" rx="1"/></svg>
+        </div>
+        <div>
+          <h3 class="neighborhood-card__name">The Gulch</h3>
+          <div class="neighborhood-card__stats">
+            <span class="neighborhood-card__stat">Avg. $680K</span>
+            <span class="neighborhood-card__stat">Walk Score: 92</span>
+          </div>
+          <p class="neighborhood-card__desc">Nashville's trendiest urban neighborhood. Luxury condos, rooftop bars, James Beard-nominated restaurants, and boutique shopping. Perfect for professionals who want walkable city living.</p>
+        </div>
+      </div>
+
+      <!-- East Nashville -->
+      <div class="neighborhood-card reveal">
+        <div class="neighborhood-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3v18M3 12h18"/><circle cx="12" cy="12" r="9"/></svg>
+        </div>
+        <div>
+          <h3 class="neighborhood-card__name">East Nashville</h3>
+          <div class="neighborhood-card__stats">
+            <span class="neighborhood-card__stat">Avg. $520K</span>
+            <span class="neighborhood-card__stat">Fastest Growing</span>
+          </div>
+          <p class="neighborhood-card__desc">The creative heart of Nashville. Eclectic mix of renovated bungalows, new construction, and local-owned businesses. Five Points, Lockeland Springs, and Shelby Park offer vibrant community living.</p>
+        </div>
+      </div>
+
+      <!-- 12 South -->
+      <div class="neighborhood-card reveal reveal--delay-1">
+        <div class="neighborhood-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-4 0h4"/></svg>
+        </div>
+        <div>
+          <h3 class="neighborhood-card__name">12 South</h3>
+          <div class="neighborhood-card__stats">
+            <span class="neighborhood-card__stat">Avg. $890K</span>
+            <span class="neighborhood-card__stat">Top Dining</span>
+          </div>
+          <p class="neighborhood-card__desc">Where Nashville charm meets boutique culture. The iconic Draper James storefront, artisan coffee shops, and some of the city's best restaurants — all on a walkable strip surrounded by updated Craftsman homes.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about__inner">
+      <div class="about__image-wrapper reveal">
+        <div class="about__image">
+          <img src="./assets/sarah-headshot.jpg" alt="Sarah Mitchell, Nashville real estate agent" loading="lazy" width="500" height="667">
+        </div>
+        <div class="about__image-accent"></div>
+      </div>
+      <div class="about__content reveal">
+        <span class="section-label">About Sarah</span>
+        <h2 class="about__name">Sarah Mitchell</h2>
+        <p class="about__title">Broker &amp; Principal Agent</p>
+        <div class="gold-divider"></div>
+        <p class="about__text">I moved to Nashville in 2010 and fell in love with this city — its energy, its neighborhoods, its people. That passion drives every transaction. Over 12 years and 340+ closed deals later, I've built my reputation on one thing: treating every client's home search like it's my own.</p>
+        <p class="about__text">Whether you're a first-time buyer navigating Nashville's competitive market or relocating your family to Belle Meade, I bring local expertise, sharp negotiation, and genuine care to every step. My average listing sells in 14 days — and at 102% of asking price.</p>
+        <div class="about__credentials">
+          <div class="about__credential">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            <span>Licensed TN Broker</span>
+          </div>
+          <div class="about__credential">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            <span>Certified Luxury Home Specialist</span>
+          </div>
+          <div class="about__credential">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            <span>NAR Member Since 2012</span>
+          </div>
+          <div class="about__credential">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            <span>Top 1% Nashville Agents</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="testimonials" id="testimonials">
+  <div class="container">
+    <div class="testimonials__header reveal">
+      <span class="section-label">Client Stories</span>
+      <h2 class="section-heading">What My Clients Say</h2>
+      <div class="gold-divider"></div>
+      <p class="section-subtext">My greatest reward is seeing clients walk into a home that's truly theirs. Here are a few of their stories.</p>
+    </div>
+
+    <div class="testimonials__grid">
+      <!-- Testimonial 1 -->
+      <div class="testimonial-card reveal">
+        <div class="testimonial-card__stars">
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+        </div>
+        <p class="testimonial-card__quote">"We relocated from Chicago and Sarah made the entire process seamless. She knew every neighborhood inside and out, found us the perfect home in 12 South, and even negotiated $30K below asking. We couldn't have done it without her."</p>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar">JR</div>
+          <div>
+            <div class="testimonial-card__name">James &amp; Rachel Thornton</div>
+            <div class="testimonial-card__detail">Purchased in 12 South — 2024</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="testimonial-card reveal reveal--delay-1">
+        <div class="testimonial-card__stars">
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+        </div>
+        <p class="testimonial-card__quote">"As a first-time buyer, I was terrified of the process. Sarah walked me through everything — from pre-approval to closing — with so much patience and expertise. She found me a stunning East Nashville bungalow I didn't think I could afford."</p>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar">MP</div>
+          <div>
+            <div class="testimonial-card__name">Maya Patterson</div>
+            <div class="testimonial-card__detail">First-time buyer, East Nashville — 2025</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="testimonial-card reveal reveal--delay-2">
+        <div class="testimonial-card__stars">
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+        </div>
+        <p class="testimonial-card__quote">"Sarah sold our Belle Meade home in 8 days — at full asking price. Her staging advice was incredible, her photography team made the house look like a magazine spread, and she handled three competing offers with total professionalism."</p>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar">DW</div>
+          <div>
+            <div class="testimonial-card__name">David &amp; Wendy Collins</div>
+            <div class="testimonial-card__detail">Sold in Belle Meade — 2024</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="contact__inner">
+      <div class="contact__info reveal">
+        <span class="section-label">Get In Touch</span>
+        <h2 class="section-heading">Let's Find Your<br>Nashville Home</h2>
+        <div class="gold-divider"></div>
+        <p class="contact__text">Whether you're buying, selling, or just exploring the Nashville market, I'd love to hear from you. Every conversation starts with understanding your needs — and ends with exceeding your expectations.</p>
+
+        <div class="contact__methods">
+          <div class="contact__method">
+            <div class="contact__method-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+            </div>
+            <div>
+              <div class="contact__method-label">Phone</div>
+              <div class="contact__method-value">(615) 555-0192</div>
+            </div>
+          </div>
+
+          <div class="contact__method">
+            <div class="contact__method-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            </div>
+            <div>
+              <div class="contact__method-label">Email</div>
+              <div class="contact__method-value">sarah@sarahmitchellrealty.com</div>
+            </div>
+          </div>
+
+          <div class="contact__method">
+            <div class="contact__method-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            </div>
+            <div>
+              <div class="contact__method-label">Office</div>
+              <div class="contact__method-value">1808 West End Ave, Suite 400<br>Nashville, TN 37203</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact__form reveal reveal--delay-1">
+        <h3 class="contact__form-title">Send a Message</h3>
+        <form onsubmit="event.preventDefault(); alert('Thank you! Sarah will be in touch within 24 hours.');">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" name="firstName" placeholder="Your first name" required>
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" name="lastName" placeholder="Your last name" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@email.com" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="(615) 555-0000">
+          </div>
+          <div class="form-group">
+            <label for="interest">I'm Interested In</label>
+            <select id="interest" name="interest">
+              <option value="">Select one...</option>
+              <option value="buying">Buying a Home</option>
+              <option value="selling">Selling My Home</option>
+              <option value="both">Buying &amp; Selling</option>
+              <option value="investing">Investment Properties</option>
+              <option value="relocation">Nashville Relocation</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell me about your ideal home, timeline, or any questions..."></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary form-submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <svg viewBox="0 0 220 44" fill="none" xmlns="http://www.w3.org/2000/svg" width="180" aria-label="Sarah Mitchell Realty">
+          <rect x="0" y="2" width="40" height="40" rx="4" fill="none" stroke="white" stroke-width="1.5"/>
+          <text x="20" y="30" text-anchor="middle" font-family="'Playfair Display', Georgia, serif" font-weight="700" font-size="22" fill="white">SM</text>
+          <text x="52" y="22" font-family="'Playfair Display', Georgia, serif" font-weight="700" font-size="16" fill="white">Sarah Mitchell</text>
+          <text x="52" y="38" font-family="'Work Sans', sans-serif" font-weight="500" font-size="8" letter-spacing="3" fill="#C4A265">R E A L T Y</text>
+        </svg>
+        <p>Nashville's trusted real estate expert. Specializing in luxury homes, first-time buyers, and Nashville's most sought-after neighborhoods.</p>
+      </div>
+
+      <div>
+        <h4 class="footer__heading">Quick Links</h4>
+        <ul class="footer__links">
+          <li><a href="#listings">Featured Listings</a></li>
+          <li><a href="#neighborhoods">Neighborhoods</a></li>
+          <li><a href="#about">About Sarah</a></li>
+          <li><a href="#testimonials">Client Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer__heading">Neighborhoods</h4>
+        <ul class="footer__links">
+          <li><a href="#neighborhoods">Belle Meade</a></li>
+          <li><a href="#neighborhoods">The Gulch</a></li>
+          <li><a href="#neighborhoods">East Nashville</a></li>
+          <li><a href="#neighborhoods">12 South</a></li>
+          <li><a href="#neighborhoods">Germantown</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer__heading">Connect</h4>
+        <ul class="footer__links">
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">Zillow Profile</a></li>
+          <li><a href="#">Realtor.com</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span class="footer__copyright">&copy; 2026 Sarah Mitchell Realty. All rights reserved. Licensed in Tennessee.</span>
+      <div class="footer__credits">
+        <a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer">Created with Perplexity Computer</a>
+        <span style="color: rgba(255,255,255,0.15);">|</span>
+        <a href="#" class="footer__djpat" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          Website by DJPAT Digital
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== SCRIPTS ===== -->
+<script>
+// Navigation scroll effect
+const nav = document.getElementById('nav');
+let lastScrollY = 0;
+
+window.addEventListener('scroll', () => {
+  const scrollY = window.scrollY;
+  if (scrollY > 50) {
+    nav.classList.add('nav--scrolled');
+  } else {
+    nav.classList.remove('nav--scrolled');
+  }
+  lastScrollY = scrollY;
+}, { passive: true });
+
+// Mobile navigation
+function toggleMobileNav() {
+  const overlay = document.getElementById('mobileNav');
+  overlay.classList.toggle('nav__mobile-overlay--open');
+  document.body.style.overflow = overlay.classList.contains('nav__mobile-overlay--open') ? 'hidden' : '';
+}
+
+// Scroll reveal animation
+const revealElements = document.querySelectorAll('.reveal');
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('reveal--visible');
+      revealObserver.unobserve(entry.target);
+    }
+  });
+}, {
+  threshold: 0.1,
+  rootMargin: '0px 0px -40px 0px'
+});
+
+revealElements.forEach(el => revealObserver.observe(el));
+
+// Smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      const navHeight = nav.offsetHeight;
+      const targetPosition = target.getBoundingClientRect().top + window.scrollY - navHeight;
+      window.scrollTo({ top: targetPosition, behavior: 'smooth' });
+    }
+  });
+});
+</script>
+
+</body>
+</html>

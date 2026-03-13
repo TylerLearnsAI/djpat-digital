@@ -160,16 +160,62 @@
     requestAnimationFrame(updateActiveNav);
   }, { passive: true });
 
+  // --- Service CTA → pre-select service in contact form ---
+  function initServiceCTAs() {
+    document.querySelectorAll('.service-cta').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const serviceName = btn.getAttribute('data-service');
+        const serviceSelect = document.getElementById('contact-service');
+        if (serviceSelect && serviceName) {
+          // Set the value
+          for (let i = 0; i < serviceSelect.options.length; i++) {
+            if (serviceSelect.options[i].value === serviceName) {
+              serviceSelect.selectedIndex = i;
+              break;
+            }
+          }
+          // Brief highlight animation
+          const selectGroup = serviceSelect.closest('.form-group');
+          if (selectGroup) {
+            selectGroup.classList.add('is-highlighted');
+            setTimeout(() => selectGroup.classList.remove('is-highlighted'), 2000);
+          }
+          // Focus on the name field so user can start filling in
+          setTimeout(() => {
+            const nameField = document.getElementById('contact-name');
+            if (nameField) nameField.focus();
+          }, 400);
+        }
+      });
+    });
+  }
+
+  // --- Thank you state on URL hash ---
+  function checkThankYou() {
+    if (window.location.hash === '#thank-you') {
+      const form = document.getElementById('contact-form');
+      const thankYou = document.getElementById('thank-you');
+      if (form && thankYou) {
+        form.style.display = 'none';
+        thankYou.style.display = 'block';
+      }
+    }
+  }
+
   // --- Initialize ---
   window.addEventListener('DOMContentLoaded', () => {
     initScrollAnimations();
     updateActiveNav();
+    initServiceCTAs();
+    checkThankYou();
   });
 
   // Also initialize if DOM is already loaded
   if (document.readyState !== 'loading') {
     initScrollAnimations();
     updateActiveNav();
+    initServiceCTAs();
+    checkThankYou();
   }
 
 })();

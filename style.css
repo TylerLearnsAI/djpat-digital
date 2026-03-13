@@ -1023,45 +1023,165 @@ ul { list-style: none; }
 
 .contact-inner {
   text-align: center;
-  max-width: 600px;
+  max-width: 680px;
   margin: 0 auto;
 }
 
-.contact-cta-block {
+/* --- Contact Form --- */
+.contact-form {
   margin-top: var(--space-8);
+  text-align: left;
 }
 
-.contact-email-btn {
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4);
+  margin-bottom: var(--space-4);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.form-group--full {
+  margin-bottom: var(--space-6);
+}
+
+.form-group label {
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.form-group .required {
+  color: var(--color-accent);
+}
+
+.form-group .optional {
+  font-size: 12px;
+  color: var(--color-text-muted);
+  font-weight: 400;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  font-family: var(--font-body);
+  font-size: 15px;
+  color: var(--color-text);
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: var(--space-3) var(--space-4);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: var(--color-text-muted);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px rgba(0, 212, 170, 0.1);
+}
+
+.form-group select {
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%2388928c' stroke-width='2' viewBox='0 0 24 24'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  padding-right: var(--space-10, 40px);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.form-submit {
   display: inline-flex;
   align-items: center;
-  gap: var(--space-3);
-  font-family: var(--font-display);
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: var(--color-accent);
-  background: var(--color-accent-subtle);
-  border: 1px solid rgba(0, 212, 170, 0.2);
+  gap: var(--space-2);
+  cursor: pointer;
+  border: none;
+  width: 100%;
+  justify-content: center;
+  font-size: 1rem;
   padding: var(--space-4) var(--space-8);
-  border-radius: 12px;
-  transition: all var(--transition-fast);
 }
 
-.contact-email-btn:hover {
-  background: var(--color-accent);
-  color: var(--color-bg);
-  box-shadow: var(--shadow-glow);
-  transform: translateY(-2px);
-}
-
-.contact-email-btn svg {
-  width: 24px;
-  height: 24px;
+.form-submit svg {
+  width: 18px;
+  height: 18px;
   flex-shrink: 0;
 }
 
-.contact-note {
-  font-size: 14px;
+.form-disclaimer {
+  font-size: 13px;
   color: var(--color-text-muted);
+  margin-top: var(--space-3);
+  text-align: center;
+}
+
+/* Thank you state */
+.thank-you {
+  padding: var(--space-12) 0;
+  text-align: center;
+}
+
+.thank-you-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto var(--space-6);
+}
+
+.thank-you-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.thank-you h3 {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: var(--space-3);
+  color: var(--color-accent);
+}
+
+.thank-you p {
+  font-size: 15px;
+  color: var(--color-text-secondary);
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Mobile form responsive */
+@media (max-width: 640px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* --- Service CTA buttons --- */
+.service-cta {
+  margin-top: var(--space-6);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: 14px;
+}
+
+.service-card:not(.service-card--primary) .service-cta {
   margin-top: var(--space-4);
 }
 
@@ -1174,6 +1294,12 @@ ul { list-style: none; }
 :focus-visible {
   outline: 2px solid var(--color-accent);
   outline-offset: 2px;
+}
+
+/* Service pre-select highlight */
+.form-group.is-highlighted select {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px rgba(0, 212, 170, 0.15);
 }
 
 /* Selection */

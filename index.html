@@ -162,6 +162,7 @@
           <li>Delivered in under 24 hours</li>
           <li>Free mock-up before you commit</li>
         </ul>
+        <a href="#contact" class="btn btn-primary service-cta" data-service="Custom Website Build">Get a Free Mock-Up <span class="arrow">&rarr;</span></a>
       </div>
       <div class="service-card">
         <div class="service-icon">
@@ -173,6 +174,7 @@
         </div>
         <h3>SEO &amp; Performance</h3>
         <p>Every site we build is optimized for search engines and blazing-fast load times. Get found by the customers searching for your services.</p>
+        <a href="#contact" class="btn btn-outline service-cta" data-service="SEO & Performance">Request a Free Audit <span class="arrow">&rarr;</span></a>
       </div>
       <div class="service-card">
         <div class="service-icon">
@@ -185,6 +187,7 @@
         </div>
         <h3>Landing Pages &amp; Funnels</h3>
         <p>High-converting landing pages designed to capture leads and drive action. Perfect for campaigns, launches, and promotions.</p>
+        <a href="#contact" class="btn btn-outline service-cta" data-service="Landing Pages & Funnels">Get a Free Mock-Up <span class="arrow">&rarr;</span></a>
       </div>
       <div class="service-card">
         <div class="service-icon">
@@ -196,6 +199,7 @@
         </div>
         <h3>Industry-Specific Design</h3>
         <p>We've built sites across HVAC, real estate, coaching, and more. Every design is tailored to your industry's best practices and customer expectations.</p>
+        <a href="#contact" class="btn btn-outline service-cta" data-service="Industry-Specific Design">Get a Free Mock-Up <span class="arrow">&rarr;</span></a>
       </div>
     </div>
   </div>
@@ -400,14 +404,61 @@
       <div class="section-header">
         <span class="section-tag">Get Started</span>
         <h2 class="section-title">Ready for a website<br>that actually works?</h2>
-        <p class="section-desc">Send us an email with your business name and what you need. We'll have a free mock-up in your inbox within 24 hours.</p>
+        <p class="section-desc">Tell us about your business and what you need. We'll send you a free mock-up within 24 hours — no commitment, no strings attached.</p>
       </div>
-      <div class="contact-cta-block">
-        <a href="mailto:tyler@djpatdigital.com" class="contact-email-btn">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 7 10-7"/></svg>
-          tyler@djpatdigital.com
-        </a>
-        <p class="contact-note">No forms. No phone calls. Just send an email and we'll take it from there.</p>
+      <form class="contact-form" id="contact-form" action="https://formsubmit.co/tyler@djpatdigital.com" method="POST">
+        <!-- FormSubmit config -->
+        <input type="hidden" name="_subject" value="New DJPAT Digital Inquiry">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="https://tylerlearnsai.github.io/djpat-digital/#thank-you">
+        <input type="text" name="_honey" style="display:none">
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="contact-name">Name <span class="required">*</span></label>
+            <input type="text" id="contact-name" name="name" placeholder="Your name" required>
+          </div>
+          <div class="form-group">
+            <label for="contact-email">Email <span class="required">*</span></label>
+            <input type="email" id="contact-email" name="email" placeholder="you@business.com" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="contact-phone">Phone <span class="optional">(optional)</span></label>
+            <input type="tel" id="contact-phone" name="phone" placeholder="(555) 123-4567">
+          </div>
+          <div class="form-group">
+            <label for="contact-service">Service Interested In <span class="required">*</span></label>
+            <select id="contact-service" name="service" required>
+              <option value="" disabled selected>Select a service</option>
+              <option value="Custom Website Build">Custom Website Build</option>
+              <option value="SEO & Performance">SEO & Performance</option>
+              <option value="Landing Pages & Funnels">Landing Pages & Funnels</option>
+              <option value="Industry-Specific Design">Industry-Specific Design</option>
+              <option value="Other">Other / Not Sure</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group form-group--full">
+          <label for="contact-message">Tell us about your project <span class="required">*</span></label>
+          <textarea id="contact-message" name="message" rows="4" placeholder="What does your business do? What do you need from a website?" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary form-submit">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13"/><path d="M22 2L15 22l-4-9-9-4 20-7z"/></svg>
+          Send Request
+        </button>
+        <p class="form-disclaimer">We'll respond within 24 hours with a free mock-up. No spam, ever.</p>
+      </form>
+
+      <!-- Thank you state (shown after submission) -->
+      <div class="thank-you" id="thank-you" style="display:none">
+        <div class="thank-you-icon">
+          <svg viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="28" stroke="var(--color-accent)" stroke-width="3"/><path d="M20 32l8 8 16-16" stroke="var(--color-accent)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Request Received</h3>
+        <p>We'll review your project and send you a free mock-up within 24 hours. Check your inbox.</p>
       </div>
     </div>
   </div>

@@ -190,7 +190,45 @@
     });
   }
 
-  // --- Thank you state on URL hash ---
+  // --- AJAX Form Submission (no redirect, no email login gate) ---
+  function initFormSubmission() {
+    const form = document.getElementById('contact-form');
+    const thankYou = document.getElementById('thank-you');
+    if (!form || !thankYou) return;
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const submitBtn = form.querySelector('.form-submit');
+      const originalText = submitBtn.innerHTML;
+      submitBtn.innerHTML = '<span class="spinner"></span> Sending...';
+      submitBtn.disabled = true;
+
+      const formData = new FormData(form);
+
+      fetch(form.action, {
+        method: 'POST',
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+      })
+      .then(response => {
+        if (response.ok) {
+          form.style.display = 'none';
+          thankYou.style.display = 'block';
+          thankYou.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        } else {
+          throw new Error('Form submission failed');
+        }
+      })
+      .catch(() => {
+        submitBtn.innerHTML = originalText;
+        submitBtn.disabled = false;
+        alert('Something went wrong. Please email us directly at tyler@djpatdigital.com');
+      });
+    });
+  }
+
+  // --- Thank you state on URL hash (legacy fallback) ---
   function checkThankYou() {
     if (window.location.hash === '#thank-you') {
       const form = document.getElementById('contact-form');
@@ -207,6 +245,7 @@
     initScrollAnimations();
     updateActiveNav();
     initServiceCTAs();
+    initFormSubmission();
     checkThankYou();
   });
 
@@ -215,6 +254,7 @@
     initScrollAnimations();
     updateActiveNav();
     initServiceCTAs();
+    initFormSubmission();
     checkThankYou();
   }
 

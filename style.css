@@ -215,6 +215,18 @@ ul { list-style: none; }
 
 .nav-cta::after { display: none; }
 
+/* Email link in nav */
+.nav-email {
+  color: var(--color-accent) !important;
+  font-size: 13px;
+  opacity: 0.85;
+  letter-spacing: 0;
+}
+.nav-email:hover {
+  opacity: 1;
+}
+.nav-email::after { display: none; }
+
 /* Header actions */
 .header-actions {
   display: flex;
@@ -1217,6 +1229,19 @@ ul { list-style: none; }
   margin-top: var(--space-1);
 }
 
+.footer-email {
+  display: inline-block;
+  margin-top: var(--space-2);
+  color: var(--color-accent);
+  font-size: 14px;
+  text-decoration: none;
+  transition: opacity var(--transition-fast);
+}
+.footer-email:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
 .footer-links {
   display: flex;
   flex-wrap: wrap;
@@ -1306,4 +1331,20 @@ ul { list-style: none; }
 ::selection {
   background: var(--color-accent);
   color: var(--color-bg);
+}
+
+/* Form submit spinner */
+.spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255,255,255,0.3);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
 }

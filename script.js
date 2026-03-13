@@ -85,7 +85,7 @@
         `Name: ${name}\nEmail: ${email}\nWebsite: ${website || 'Not provided'}\n\nMessage:\n${message}`
       );
 
-      window.open(`mailto:tyler.piron@gmail.com?subject=${subject}&body=${body}`, '_blank');
+      window.open(`mailto:tyler@djpatdigital.com?subject=${subject}&body=${body}`, '_blank');
     });
   }
 
